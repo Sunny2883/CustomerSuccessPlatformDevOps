@@ -1,0 +1,26 @@
+<h2 mat-dialog-title>Assine Role </h2>
+<mat-dialog-content class="">
+    <form id="userRoleForm" class="max-w-md mx-auto space-y-4" [formGroup]="userRoleForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+          <mat-label>Select User</mat-label>
+          <mat-select formControlName="userId">
+            <mat-option value="1">User 1</mat-option>
+            <mat-option value="2">User 2</mat-option>
+          </mat-select>
+        </mat-form-field>
+      
+        <mat-form-field appearance="fill">
+          <mat-label>Select Role</mat-label>
+          <mat-select formControlName="roleId">
+            <mat-option value="1">Role 1</mat-option>
+            <mat-option value="2">Role 2</mat-option>
+          </mat-select>
+        </mat-form-field>
+      
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </form>
+      
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>
